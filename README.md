@@ -11,7 +11,8 @@ When a particle takes part of the swarm into consideration, it is a local best v
 
 We have the following update rules for the position and the velocity at a given time step $t$ and for a given particle i:
 
-![Velocity Equation](https://latex.codecogs.com/svg.image?v_i^{t+1}&space;=&space;\underbrace{w&space;\cdot&space;v_i^t}_{\text{inertia}}&space;&plus;&space;\underbrace{c_1&space;r_1&space;(pBest_i^t&space;-&space;x_i^t)}_{\text{cognitive}}&space;&plus;&space;\underbrace{c_2&space;r_2&space;(gBest_i^t&space;-&space;x_i^t)}_{\text{social}})
+![Velocity Equation](https://latex.codecogs.com/svg.image?\bg_black&space;\color{White}&space;v_i^{t+1}&space;=&space;\underbrace{w&space;\cdot&space;v_i^t}_{\text{inertia}}&space;&plus;&space;\underbrace{c_1&space;r_1&space;(pBest_i^t&space;-&space;x_i^t)}_{\text{cognitive}}&space;&plus;&space;\underbrace{c_2&space;r_2&space;(gBest_i^t&space;-&space;x_i^t)}_{\text{social}})
+
 
 
 

@@ -10,12 +10,11 @@ PSO is initialized with a group of random particles (solutions) and then searche
 When a particle takes part of the swarm into consideration, it is a local best value. Each particle keeps track of its coordinates in the problem space which are associated with the best solution (fitness) it has achieved so far. When a particle takes all the population as its topological neighbors, the best value is a global one which is obtained so far by any particle in the population.
 
 We have the following update rules for the position and the velocity at a given time step $t$ and for a given particle i:
-$$
-v_i^{t+1} = 
-\underbrace{w \cdot v_i^t}_{\text{inertia component}} + 
-\underbrace{c_1 r_1 \cdot (pBest_i^t - x_i^t)}_{\text{cognitive component}} + 
-\underbrace{c_2 r_2 \cdot (gBest_i^t - x_i^t)}_{\text{social component}}
-$$
+
+v_i^{t+1} = w * v_i^t                  (inertia)
+          + c1 * r1 * (pBest_i^t - x_i^t)  (cognitive)
+          + c2 * r2 * (gBest_i^t - x_i^t)  (social)
+
 
 and the position update rule:
 

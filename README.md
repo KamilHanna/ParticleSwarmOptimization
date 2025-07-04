@@ -14,11 +14,9 @@ We have the following update rules for the position and the velocity at a given 
 ![Velocity Equation](https://latex.codecogs.com/svg.image?\bg_black&space;\color{White}&space;v_i^{t+1}&space;=&space;\underbrace{w&space;\cdot&space;v_i^t}_{\text{inertia}}&space;&plus;&space;\underbrace{c_1&space;r_1&space;(pBest_i^t&space;-&space;x_i^t)}_{\text{cognitive}}&space;&plus;&space;\underbrace{c_2&space;r_2&space;(gBest_i^t&space;-&space;x_i^t)}_{\text{social}})
 
 
-
-
 and the position update rule:
 
-$$x^{t+1}_{i}=x^{t}_{i}+v^{t+1}_{i}$$
+![Position Update](https://latex.codecogs.com/svg.image?\bg_black&space;\color{White}&space;x_i^{t&plus;1}&space;=&space;x_i^t&space;&plus;&space;v_i^{t&plus;1})
 
 Where, $v$ is the velocity, $x$ the position, $w$ is the inertia weight that dictates the momentum of the particle, $c1$ and $c2$ are the acceleration parameters which are the weights of the cognitive and social componenets in the global update. $r1$ and $r2$ are random uniformly distributed variables between 0 and 1. 
 

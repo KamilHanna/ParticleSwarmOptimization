@@ -11,9 +11,12 @@ When a particle takes part of the swarm into consideration, it is a local best v
 
 We have the following update rules for the position and the velocity at a given time step $t$ and for a given particle i:
 
-v_i^{t+1} = w * v_i^t                  (inertia)
-          + c1 * r1 * (pBest_i^t - x_i^t)  (cognitive)
-          + c2 * r2 * (gBest_i^t - x_i^t)  (social)
+$$
+v_i^{t+1} = 
+\underbrace{w \cdot v_i^t}_{\text{inertia}} +
+\underbrace{c_1 r_1 (pBest_i^t - x_i^t)}_{\text{cognitive}} +
+\underbrace{c_2 r_2 (gBest_i^t - x_i^t)}_{\text{social}}
+$$
 
 
 and the position update rule:

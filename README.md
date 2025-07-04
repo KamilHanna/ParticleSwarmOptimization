@@ -58,11 +58,11 @@ The Rosenbrock function is a very difficult function to optimize due to its larg
 
 - Ackley function has a minimum of 0 at $[0,0,...,0,0]^{D}$
 
-$$F(x)= -20 * exp( -0.2 * \sqrt{ \frac{1}{D} \sum^{D}_{d=1}x^{[D]2} }) - exp(\frac{1}{D} \sum^{D}_{d=1} cos(2\pi x^{[d]}))+ 20 + exp(1)$$
+![Ackley Function](https://latex.codecogs.com/svg.image?\bg_black&space;\color{White}&space;F(x)&space;=&space;-20&space;\cdot&space;\exp\left(-0.2&space;\cdot&space;\sqrt{&space;\frac{1}{D}&space;\sum_{d=1}^{D}&space;x_d^2&space;}&space;\right)&space;-&space;\exp\left(&space;\frac{1}{D}&space;\sum_{d=1}^{D}&space;\cos(2\pi&space;x_d)&space;\right)&space;&plus;&space;20&space;&plus;&space;\exp(1))
 
 - Griewank is similar to the rastrigin function 
 
-$$F(x)= \sum^{D}_{d=1} \frac{x^{[D]2}}{4000} - \prod^{D}_{d=1}cos(\frac{x^{[d]}}{\sqrt{1}})+1$$
+![Griewank Function](https://latex.codecogs.com/svg.image?\bg_black&space;\color{White}&space;F(x)&space;=&space;\sum_{d=1}^{D}&space;\frac{x_d^2}{4000}&space;-&space;\prod_{d=1}^{D}&space;\cos\left(\frac{x_d}{\sqrt{d}}\right)&space;&plus;&space;1)
 
 ## 5. Dependencies and build
 This project requires `CMake` for building the project and `openMP` in order to enable the CPU parallelism.
